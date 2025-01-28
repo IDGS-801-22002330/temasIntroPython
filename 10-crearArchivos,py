@@ -1,0 +1,19 @@
+from io import open
+import math
+
+#math.sqrt()
+#math.pow()
+
+#texto = open("archivo.txt", "w") sobreescribir
+#texto.write("Hola, soy un archivo jaja mirenme\n")
+
+#texto = open("archivo.txt", "a") añadir
+
+texto = open("archivo.txt", "r")
+lectura = texto.readlines()
+print(type(lectura))
+print(lectura)
+for i in lectura:
+    print(i)
+texto.close()
+
